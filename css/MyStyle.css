@@ -1,0 +1,638 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+#header-contact {
+	background-color: rgb(19, 59, 108);
+	width: 100vw;
+	height: 30px;
+}
+
+#text-1 {
+	margin-left: 17vw;
+	color: #fff;
+	font-size: smaller;
+}
+
+.social {
+	width: 12px;
+	height: 12px;
+	margin-left: 10px;
+}
+
+.list-items-width {
+	margin-left: 20vw;
+}
+
+.navbar-nav a {
+	margin-right: 50px;
+	transition: transform 0.5s;
+}
+
+.navbar-nav a:hover {
+	transform: translateY(-12px);
+}
+
+/*-------------------------carosel box --------------------------------------------*/
+.box-home {
+    background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url("../Images/About/11.png");
+   
+}
+
+.box-home-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 500px;
+}
+
+.box-col-1 {
+	flex-basis: 60%;
+}
+
+.box-col-2 {
+	flex-basis: 35%;
+}
+
+.box-col-2 img {
+	width: 100%;
+	height: 500px;
+}
+
+.box-col-1 span {
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 800;
+	margin: 85px 0 0px 170px;
+}
+
+.box-col-1 p {
+	display: inline-block;
+	font-size: 14px;
+	color: rgb(255, 254, 254);
+	margin: 30px 0 0px 170px;
+}
+
+.request-btn {
+	display: inline;
+	margin: 200px 0 0 -450px;
+	transition: transform 0.5s;
+}
+
+.request-btn:hover {
+	transform: translateY(-6px);
+}
+
+/*------------------------------- Services section ---------------------------------*/
+#services {
+	padding: 30px 0;
+}
+
+.sub-title {
+	display: block;
+	font-weight: 600;
+	margin-left: 500px;
+}
+
+.services-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 40px;
+	margin-top: 50px;
+	color: #fff;
+}
+
+#list-1 {
+	background-image: url('../Images/electronics-bg1.webp');
+	background-color: rgb(110, 109, 109);
+	background-size: cover;
+	opacity: 0.8;
+}
+
+#list-2 {
+	background-image: url('../Images/laptop-mobile-bg1.jpg');
+	background-color: rgb(110, 109, 109);
+	background-size: cover;
+	opacity: 0.8;
+}
+
+#list-3 {
+	background-image: url('../Images/car-bike-bg.jpg');
+	background-color: rgb(110, 109, 109);
+	background-size: cover;
+	opacity: 0.8;
+}
+
+.services-list div {
+	background: rgb(110, 109, 109);
+	padding: 40px;
+	font-size: 13px;
+	font-weight: 300;
+	border-radius: 10px;
+	transition: transform 0.5s;
+}
+
+.services-list div i {
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+.services-list div h2 {
+	color:#f4f4f4;
+	font-size: 30px;
+	font-weight: 800;
+	margin-bottom: 15px;
+}
+
+.services-list div a {
+	text-decoration: solid;
+	border-radius: 50%;
+	color: #ffffff;
+	font-size: 50px;
+	font-weight: 400;
+	margin-top: 20px;
+	margin-left: 300px;
+	display: inline-block;
+
+}
+
+#list-1:hover,
+#list-2:hover,
+#list-3:hover {
+	opacity: 1.0;
+	transform: translateY(-12px);
+}
+
+
+/*<------------------- Customer Slider CSS*------------------------------------>*/
+.container-slider {
+	position: relative;
+	width: 100%;
+	min-height: 450px;
+	background-color: #f5f5f5;
+}
+
+.container-slider .contents-wraper {
+	width: 70%;
+	min-height: inherit;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.contents-wraper .header h1 {
+	position: relative;
+	font-size: 40px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.contents-wraper .header h1::before {
+	content: '';
+	width: 200px;
+	height: 2px;
+	background-color: #006994;
+	border-radius: 15px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -10px;
+}
+
+.contents-wraper .testRow {
+	width: 100%;
+	min-height: inherit;
+	position: relative;
+	overflow: hidden;
+}
+
+.testRow .testItem {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.testRow .testItem:not(.active) {
+	top: 0;
+	left: -100%;
+}
+
+.testRow .testItem img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 5px;
+	outline: 2px solid #006994;
+	outline-offset: 2px;
+}
+
+.testRow .testItem h3 {
+	font-size: 30px;
+	font-style: italic;
+	padding: 7px;
+}
+
+.testRow .testItem h4 {
+	color:#ee6515;
+	font-style: italic;
+}
+
+.testRow .testItem p {
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	padding: 10px;
+}
+
+.contents-wraper .indicators {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 5px;
+	cursor: pointer;
+}
+
+.contents-wraper .indicators .dot {
+	width: 15px;
+	height: 15px;
+	margin: 0px 3px;
+	border: 3px solid #aaa;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.5s ease;
+}
+
+.contents-wraper .indicators .active {
+	background-color: #e25e0b;
+}
+
+@keyframes next1 {
+	from {
+		left: 0%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+
+@keyframes next2 {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: 0%;
+	}
+}
+
+@keyframes prev1 {
+	from {
+		left: 0%;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+@keyframes prev2 {
+	from {
+		left: -100%;
+	}
+
+	to {
+		left: 0%;
+	}
+}
+
+@media(max-width: 550px) {
+	.container-slider .contents-wraper {
+		width: 90%;
+	}
+
+	.contents-wraper .header h1 {
+		font-size: 32px;
+	}
+
+	.testRow .testItem h3 {
+		font-size: 26px;
+	}
+
+	.testRow .testItem p {
+		font-size: 16px;
+		letter-spacing: initial;
+		line-height: initial;
+	}
+
+}
+
+/*<------------------- Box2 CSS*------------------------------------>*/
+.box2 {
+	position: absolute;
+	width: 80vw;
+	height: 45vh;
+	margin: 80px 10vw 80px 10vw;
+	box-sizing: border-box;
+	background-image: url(../Images/Box21-bg.png);
+	background-color: rgb(110, 109, 109);
+	background-size: cover;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.box2 span {
+	display: inline;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 600px;
+	margin: 70px 30vw 5px 30px;
+	float: left;
+}
+
+.box2 p {
+	display: inline;
+	position: absolute;
+	color: #fff;
+	font-size: 20px;
+	margin: 150px 30vw 10px 80px;
+}
+
+.estimate-btn {
+	position: absolute;
+	margin: 150px 0 10px 50vw;
+}
+
+/*-------------------------- contact box css -----------------------------------*/
+.contact-box {
+	margin: 50px 0 5vh 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.contact-box #heading {
+	position: relative;
+	display: inline;
+	font-weight: 600;
+	font-size: 50px;
+	margin: 45px 0 20px 35vw;
+}
+
+.form {
+	display: flex;
+	margin-left: 10vw;
+	margin-top: 30px;
+	width: 80%;
+	padding: 10px;
+}
+
+.container-left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 10px 0 10px 10px;
+
+}
+
+.form label {
+	font-size: 20px;
+	font-weight: 600;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.form input {
+	width: 100%;
+	height: 60px;
+	border-radius: 10px;
+}
+
+.first-name,
+.last-name {
+	margin-bottom: 30px;
+}
+
+.container-right {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 10px 0 10px 80px;
+}
+
+.textbox {
+	display: block;
+	margin: 10px 0 0 11vw;
+}
+
+.textbox label {
+	font-size: 20px;
+	font-weight: 600;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.textbox input {
+	width: 90%;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.submit-btn {
+	display: block;
+	margin: 50px 0 3vh 47vw;
+	background-color: rgb(27, 27, 87);
+	color: #ffffff;
+	border-radius: 10px;
+	width: 100px;
+	height: 50px;
+}
+
+/*--------------------------- Footer section css ----------------------------------*/
+.footer {
+	min-height: 600px;
+	width: 100%;
+	background-color: #fffdfd;
+	position: relative;
+	
+}
+.footer-row {
+	display: flex;
+	padding: 10px;
+	margin-top: 30px;
+	width: 100%;
+}
+
+.container1 {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width:20vw;
+	margin: 100px 3vw 10px 5vw;
+	position: relative;
+}
+.container1 h1{
+	font-weight: 600;
+}
+.container1 p{
+	color: #aaa;
+	margin-top: 20px;
+}
+.container1 input{
+	margin: 20px 0 0 0;
+	height:60px;
+	color: #333131;
+	border-radius:10px;
+}
+.container1 img{
+  position: relative;
+  width:60px;
+  height:60px;	
+  border-radius:8px;
+  margin:-8vh 0 0 16vw;
+}
+
+.container2 {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width:20vw;
+	margin: 100px 1vw 10px 1vw;
+}
+.container2 h6{
+    font-weight:600;
+	margin:0 0 30px 30px;
+}
+.container2 ul{
+	color: #aaa;
+    list-style-type: none; 
+}
+.container2 li{
+    line-height: 2.5em; 
+}
+
+
+.container3 {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width:20vw;
+	margin: 100px 1vw 10px 1vw;
+}
+.container3 h6{
+    font-weight:600;
+	margin:0 0 30px 30px;
+}
+.container3 ul{
+	color: #aaa;
+    list-style-type: none; 
+}
+.container3 li{
+    line-height: 2.5em; 
+}
+
+
+.container4 {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width:20vw;
+	margin: 100px 1vw 10px 1vw;
+}
+.container4 h6{
+    font-weight:600;
+	margin:0 0 30px 30px;
+}
+.container4 ul{
+	color: #aaa;
+    list-style-type: none; 
+}
+.container4 li{
+    line-height: 2.5em; 
+}
+.footer hr {
+    position: relative;
+	width:100%;
+	margin: 10vh 0px 0px 0px;
+	color: black;
+	size:20px;
+}
+.lower_footer {
+	display: flex;
+}
+.lower_footer span {
+	color:#b5b3b3;
+	display: inline-block;
+	margin:50px 10px 20px 10px;
+} 
+
+
+/* -----------------------------About Page Css------------------------------------ */
+/*---------------carosel box ---------------------*/
+.box-about {
+    background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url(../Images/About/11.png);
+}
+
+
+.box-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 500px;
+}
+
+.box-col-1 {
+	flex-basis: 60%;
+}
+
+.box-col-2 {
+	flex-basis: 35%;
+}
+
+.box-col-2 img {
+	width: 100%;
+	height: 500px;
+}
+
+.box-col-1 span {
+    color: aliceblue;
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 800;
+	margin: 85px 0 0px 170px;
+}
+
+.box-col-1 p {
+	display: inline-block;
+	font-size: 14px;
+	color: grey;
+	margin: 30px 0 0px 170px;
+}
+
+/* --------our platforms section css------------------ */
+.our-platform {
+    display: block;
+	font-weight: 600;
+	margin-left: 500px;
+}
